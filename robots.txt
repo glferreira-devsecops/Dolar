@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://futurodevjunior.github.io/Dolar/sitemap.xml
+Sitemap: https://glferreira-devsecops.github.io/Dolar/sitemap.xml
 
 # Contact
 Contact: Contato.ferreirag@outlook.com

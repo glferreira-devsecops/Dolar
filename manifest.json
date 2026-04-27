@@ -1,18 +1,19 @@
 {
   "name": "Cotação PRO",
-  "short_name": "Cotação PRO",
+  "short_name": "CotaçãoPRO",
   "description": "Cotação do Dólar, Euro e Libra em Tempo Real",
   "start_url": "/Dolar/",
+  "scope": "/Dolar/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#38bdf8",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💲</text></svg>",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
-  ],
-  "author": "Gabriel Ferreira",
-  "contact": "Contato.ferreirag@outlook.com"
+  ]
 }

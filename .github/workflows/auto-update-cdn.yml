@@ -1,0 +1,53 @@
+name: Auto-Update CDN Dependencies
+
+on:
+  schedule:
+    - cron: '23 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-cdns:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check and update CDN versions
+        run: |
+          FILE="index.html"
+          CHANGED=false
+
+          # Chart.js
+          LATEST_CHART=$(curl -s https://data.jsdelivr.com/v1/packages/npm/chart.js | python3 -c "import sys,json; print(json.load(sys.stdin)['tags']['latest'])")
+          CURRENT_CHART=$(grep -oP 'chart\.js@\K[0-9.]+' "$FILE" || echo "0")
+          if [ "$LATEST_CHART" != "$CURRENT_CHART" ] && [ -n "$LATEST_CHART" ]; then
+            sed -i "s|chart.js@${CURRENT_CHART}|chart.js@${LATEST_CHART}|g" "$FILE"
+            echo "Chart.js: $CURRENT_CHART → $LATEST_CHART"
+            CHANGED=true
+          fi
+
+          # DayJS
+          LATEST_DAY=$(curl -s https://data.jsdelivr.com/v1/packages/npm/dayjs | python3 -c "import sys,json; print(json.load(sys.stdin)['tags']['latest'])")
+          CURRENT_DAY=$(grep -oP 'dayjs@\K[0-9.]+' "$FILE" || echo "0")
+          if [ "$LATEST_DAY" != "$CURRENT_DAY" ] && [ -n "$LATEST_DAY" ]; then
+            sed -i "s|dayjs@${CURRENT_DAY}|dayjs@${LATEST_DAY}|g" "$FILE"
+            echo "DayJS: $CURRENT_DAY → $LATEST_DAY"
+            CHANGED=true
+          fi
+
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+        id: check
+
+      - name: Create Pull Request
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(deps): atualizar CDNs automaticamente"
+          title: "⬆️ Atualizar dependências CDN"
+          body: "Atualização automática de Chart.js e/ou DayJS para versões mais recentes."
+          branch: auto-update-cdn
+          labels: dependencies

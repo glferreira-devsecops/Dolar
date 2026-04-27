@@ -106,8 +106,10 @@
             </footer>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+    <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.warn('SW:',e));}</script>
     
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -267,7 +269,7 @@
                             responsive: true, maintainAspectRatio: false,
                             plugins: { legend: { display: false }, tooltip: {
                                 mode: 'index', intersect: false,
-                                callbacks: { label: (context) => `Valor: ${this.formatCurrency(context.raw)}` }
+                                callbacks: { label: (context) => `Valor: ${render.formatCurrency(context.raw)}` }
                             }},
                             scales: { x: { grid: { display: false } }, y: { grid: { color: 'rgba(128,128,128,0.1)' } } }
                         }
