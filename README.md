@@ -4,14 +4,14 @@
 
 ![Cotação PRO](https://placehold.co/1200x630/0f172a/38bdf8?text=Cota%C3%A7%C3%A3o%20PRO)
 
-[![GitHub Actions](https://github.com/futurodevjunior/Dolar/actions/workflows/deploy.yml/badge.svg)](https://github.com/futurodevjunior/Dolar/actions)
-[![License: MIT](https://img.shields.io/github/license/futurodevjunior/Dolar?style=for-the-badge)](LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/futurodevjunior/Dolar?style=for-the-badge)](https://github.com/futurodevjunior/Dolar/commits/main)
-[![Open Issues](https://img.shields.io/github/issues/futurodevjunior/Dolar?style=for-the-badge)](https://github.com/futurodevjunior/Dolar/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/futurodevjunior/Dolar?style=for-the-badge)](https://github.com/futurodevjunior/Dolar/pulls)
-[![GitHub Stars](https://img.shields.io/github/stars/futurodevjunior/Dolar?style=for-the-badge)](https://github.com/futurodevjunior/Dolar/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/futurodevjunior/Dolar?style=for-the-badge)](https://github.com/futurodevjunior/Dolar/network/members)
-[![Releases](https://img.shields.io/github/v/release/futurodevjunior/Dolar?style=for-the-badge&include_prereleases)](https://github.com/futurodevjunior/Dolar/releases)
+[![GitHub Actions](https://github.com/glferreira-devsecops/Dolar/actions/workflows/deploy.yml/badge.svg)](https://github.com/glferreira-devsecops/Dolar/actions)
+[![License: MIT](https://img.shields.io/github/license/glferreira-devsecops/Dolar?style=for-the-badge)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/glferreira-devsecops/Dolar?style=for-the-badge)](https://github.com/glferreira-devsecops/Dolar/commits/main)
+[![Open Issues](https://img.shields.io/github/issues/glferreira-devsecops/Dolar?style=for-the-badge)](https://github.com/glferreira-devsecops/Dolar/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/glferreira-devsecops/Dolar?style=for-the-badge)](https://github.com/glferreira-devsecops/Dolar/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/glferreira-devsecops/Dolar?style=for-the-badge)](https://github.com/glferreira-devsecops/Dolar/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/glferreira-devsecops/Dolar?style=for-the-badge)](https://github.com/glferreira-devsecops/Dolar/network/members)
+[![Releases](https://img.shields.io/github/v/release/glferreira-devsecops/Dolar?style=for-the-badge&include_prereleases)](https://github.com/glferreira-devsecops/Dolar/releases)
 
 ---
 
@@ -79,12 +79,12 @@ Dolar/
 
 ## Como usar
 
-Acesse diretamente pelo navegador: [https://futurodevjunior.github.io/Dolar/](https://futurodevjunior.github.io/Dolar/)
+Acesse diretamente pelo navegador: [https://glferreira-devsecops.github.io/Dolar/](https://glferreira-devsecops.github.io/Dolar/)
 
 Ou rode localmente:
 
 ```bash
-git clone https://github.com/futurodevjunior/Dolar.git
+git clone https://github.com/glferreira-devsecops/Dolar.git
 cd Dolar
 # Abra o arquivo index.html no navegador
 ```
@@ -130,7 +130,7 @@ Levamos segurança a sério. Vulnerabilidades podem ser reportadas conforme a [p
 
 ## Governança, Contato e Comunidade
 
-O projeto é mantido por [Gabriel Ferreira](https://github.com/futurodevjunior) e pela comunidade. Para contato, utilize as [issues](https://github.com/futurodevjunior/Dolar/issues), [pull requests](https://github.com/futurodevjunior/Dolar/pulls) ou conecte-se pelo [LinkedIn](https://www.linkedin.com/in/DevFerreiraG/).
+O projeto é mantido por [Gabriel Ferreira](https://github.com/glferreira-devsecops) e pela comunidade. Para contato, utilize as [issues](https://github.com/glferreira-devsecops/Dolar/issues), [pull requests](https://github.com/glferreira-devsecops/Dolar/pulls) ou conecte-se pelo [LinkedIn](https://www.linkedin.com/in/DevFerreiraG/).
 
 Seja parte da evolução: contribua, sugira, questione. Aqui, toda participação é valorizada.
 
